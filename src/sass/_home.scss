@@ -1,0 +1,439 @@
+*{
+  font-family: $font;
+}
+.container{
+      width: 85%;
+}
+//////nav
+nav{
+  background-color:transparent !important;
+  color:$color-tabla;
+  position: absolute;
+  z-index: 3;
+  box-shadow:none;
+    li{
+      color:green !important;
+      padding-left: 12px;
+      a{
+        color: #949393;
+      }
+      nav ul li{
+        padding-left: 12px;
+      }
+    }
+}
+.circle-default{
+    border: none;
+    display: block;
+    margin-left: -2px;
+    margin-top: 11px;
+    border-radius: 50px;
+    width:40px;
+}
+.brand-logo{
+  width:83px;
+}
+//////////////////////////////////hosting///////////////////////////////
+#hosting_opportunity_div{
+  position: relative;
+  width: 950px;
+  height: 300px;
+  background-color: $color-font;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+
+#hosting_opportunity_div_1{
+ position: absolute;
+  width: 330px;
+  height: 100%;
+  margin-left: 30px;
+  
+  #hosting_opportunity_text{
+    color: $color-tabla;
+    font-size: 22px;
+    left: 50%;
+    margin-left: -110px;
+    top: 30px;
+  }
+  #earn_money_text{
+    color: $color-font;
+    left: 50%;
+    margin-left: -110px;
+    top: 120px;
+  }
+  .what_earn_link{
+    color:$color-font;
+    background-color: #19A79B;
+    position: absolute;
+    font-weight: bold;
+    padding: 8px 21px;
+    text-decoration: none;
+    border-radius: 50px;
+    bottom: 112px;
+    left: -105px;
+    box-shadow: none;
+    border-style:none;
+
+    &:hover{
+      background-color: #77DCCD;
+    }
+      a{
+         color:$color-tabla;
+        }
+    }
+}
+#hosting_opportunity_div_2{
+  position: absolute;
+  width: 600px;
+  height: 312px;
+  background-image: url('../../img-home/anfitrion.png');
+  background-size: cover;
+  margin-left: 410px;
+  }
+}
+//////Alojamientos
+@media only screen and (min-width: 993px) {
+  .container90 {
+    width: 90%;
+  }
+}
+img.responsive-img {
+  height: 214px;
+}
+//////////////////carrusel multiple
+.owl-nome {
+  .item {
+    background: none;
+    height: 408px;
+    text-align: center;
+  }
+  .owl-dots {
+    margin-top: 50px;
+  }
+  .owl-nav [class*=owl-] {
+    color: $color-style-red;
+    font-size: 54px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    &:hover {
+      color: $color-style-blue;
+      background: none;
+    }
+  }
+  .owl-dots .owl-dot {
+    span {
+      width: 50px;
+      height: 5px;
+      margin: 5px 7px;
+      background: $color-style-blue;
+      transition: opacity .2s ease;
+      border-radius: 30px;
+    }
+
+    &.active span {
+      background: $color-style-red;
+    }
+  }
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: $color-style-red;
+}
+
+.owl-nome {
+  .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 26%;
+    background: $color-style-blue;
+    height: 0px;
+  }
+
+  .owl-next {
+    position: absolute;
+    background: $color-style-blue;
+    right: 1%;
+  }
+
+  .owl-prev {
+    position: absolute;
+    background: $color-style-blue;
+    left: 1%;
+  }
+}
+
+.owl-stage-outer {
+  height: 412px;
+}
+///////////////inputs
+.searchbar {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 27px;
+
+  input, select, button, .select {
+    display: block;
+    height: 44px;
+  }
+  button{
+    border-radius:4px;
+    margin: $font-size-search;
+    width: 133px;
+
+      &hover{
+        background-color: #ECB7B7;
+      }
+
+    p{
+      margin-top: -9px;
+      padding-left: 30px;
+      color: $color-font;
+    }
+  }
+
+  input:focus {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.searchbar__input-wrapper {
+  float: left;
+}
+
+.searchbar__location, .searchbar__checkin, .searchbar__checkout, .searchbar__dates--new, .searchbar__guests, .searchbar__submit {
+  float: left;
+  margin: 0 -1px 0 0;
+  padding-top: 23px;
+  padding-bottom: 0;
+  font-size: $font-size-search;
+  vertical-align: middle;
+  width: auto;
+  border: 1px solid $borders;
+  padding: 5px;
+  height: 77px;
+  color: black;
+}
+
+.searchbar__location {
+  width: 337px;
+    padding-bottom: 0;
+    font-size: $font-size-search;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+
+  input {
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.searchbar__location-error {
+  background: $color-tabla;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  left: 0;
+  margin-top: -1px;
+  position: absolute;
+  top: 100%;
+  width: 220px;
+}
+
+.searchbar__checkin, .searchbar__checkout {
+  width: 168px;
+  border-left:none;
+}
+
+.searchbar__checkin input, .searchbar__checkout input {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.searchbar__checkout{
+      padding-top: 26px;
+}
+.searchbar__guests select {
+  width:230px;
+}
+.SearchForm {
+    border: 1px solid $borders;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 3px 0 $borders;
+    -moz-box-shadow: 0 1px 3px 0 $borders;
+    box-shadow: 0 1px 3px 0 $borders;
+    margin-left: 0;
+    margin-right: 0;
+}
+.SearchForm__inputs-wrapper{
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    float: none;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.searchbar__submit {
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-left-radius: 0;
+  display: inline-block;
+}
+
+@media (min-width: 1100px) {
+  .searchbar__location, .searchbar__location-error {
+    width: 380px;
+  }
+}
+
+///////SLIDER MULTIPLE 3
+
+.classe {
+  .owl-wrapper .item {
+    margin: 10px;
+  }
+
+  .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .owl-controls {
+    .owl-buttons {
+      div {
+        position: absolute;
+      }
+
+      .owl-prev {
+        left: -45px;
+        top: 36%;
+      }
+
+      .owl-next {
+        right: -45px;
+        top: 36%;
+      }
+
+      div {
+        color: $color-style-red !important;
+        margin: 0px !important;
+        padding: 0px 0px !important;
+        font-size: 50px !important;
+        background: none !important;
+        filter: Alpha(Opacity = 100) !important;
+        opacity: 1 !important;
+
+        &:hover {
+          filter: Alpha(Opacity = 50);
+          opacity: 0.5 !important;
+        }
+      }
+    }
+
+    .owl-page {
+      span {
+        width: 9px;
+        height: 9px;
+        margin: 5px 7px;
+        filter: Alpha(Opacity = 100);
+
+        /*IE7 fix*/
+        opacity: 1;
+        background: $borders;
+      }
+
+      &.active span {
+        border: 3px solid $color-style-red;
+        background: $color-style-red;
+      }
+    }
+  }
+}
+////////FOOTER/////
+footer{
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.select-bajar{
+  margin-top:33px;
+}
+.select-baja{
+  margin-top:10px;
+}
+.uno{
+   margin-top:10px;
+}
+span{
+  font-weight: bold;
+  padding-bottom:5%;
+  color:black;
+  font-size:14px;
+}
+.span{
+  margin-top:30px;
+  margin-bottom:10px;
+}
+li{
+  color:$color-tabla;
+}
+.lista-footer {
+  padding: 4px;
+  margin-top: 10px;
+  margin-left: 57px;
+  a{
+    color: $color-iconos;
+  }
+}
+.redes-sociales li {
+    color: $color-tabla;
+    width: 97%;
+    float:left;
+}
+.links-footer{
+  .a{
+    color:$color-tabla;
+    margin-left: -35px;
+  }
+a{
+  color:$color-tabla;
+}
+img{
+  width: 50px;
+  height: 40px;
+  margin-top: 8px;
+  margin-left: -12px;
+}
+.iconos-redes{
+  margin-left:-32px;
+  display:flex;
+    a{
+      margin:0px 12px;
+    }
+   }
+}
+.linea{
+  margin: 0 auto !important;
+}
+.owl-stage-outer{
+  height:550px;
+}
